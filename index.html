@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mesa Ridge Passport — The Digital Passport for Luxury Shopping</title>
+  <meta name="description" content="Mesa Ridge Passport — one secure luxury profile that travels with customers across participating retailers. Request a demo or join the waitlist." />
+  <meta name="theme-color" content="#000000" />
+  <meta property="og:title" content="Mesa Ridge Passport" />
+  <meta property="og:description" content="One secure luxury profile for customers and powerful clienteling tools for retailers." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg: #ffffff;
+      --text: #000000;
+      --muted: #6b6b6b;
+      --accent: #000000;
+      --container: 1100px;
+      --radius: 12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      font-size:16px;
+    }
+    .container{
+      max-width:var(--container);
+      margin:0 auto;
+      padding:1.5rem;
+    }
+    header.site-header{
+      position:sticky;
+      top:0;
+      background:linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.99));
+      border-bottom:1px solid #efefef;
+      backdrop-filter: blur(4px);
+      z-index:50;
+    }
+    .header-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+    }
+    .brand{
+      font-weight:700;
+      letter-spacing:.2px;
+      text-decoration:none;
+      color:var(--text);
+      font-size:1rem;
+    }
+    nav.primary a{
+      margin-left:1rem;
+      color:var(--text);
+      text-decoration:none;
+      font-weight:600;
+      font-size:.95rem;
+    }
+    nav.primary a.cta{
+      padding:.45rem .8rem;
+      background:var(--accent);
+      color:white;
+      border-radius:9px;
+      margin-left:1rem;
+      text-decoration:none;
+      font-weight:700;
+    }
+    /* Hero */
+    .hero{
+      padding:4rem 0;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1fr 460px;
+      gap:2rem;
+      align-items:center;
+    }
+    .hero h1{
+      margin:0 0 .5rem 0;
+      font-size:2.25rem;
+      line-height:1.05;
+    }
+    .lede{
+      color:var(--muted);
+      margin:0 0 1.25rem 0;
+      font-size:1.05rem;
+    }
+    .hero-ctas{display:flex; gap:.75rem; flex-wrap:wrap}
+    .btn{
+      display:inline-block;
+      padding:.7rem 1.1rem;
+      border-radius:10px;
+      background:var(--text);
+      color:white;
+      text-decoration:none;
+      font-weight:700;
+    }
+    .btn.ghost{
+      background:transparent;
+      color:var(--text);
+      border:1px solid rgba(0,0,0,0.08);
+    }
+    .hero-graphic{
+      background:#fafafa;
+      border-radius:12px;
+      padding:1.25rem;
+      text-align:center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    }
+    .hero-graphic p{margin:0; color:var(--muted)}
+    /* Sections */
+    section{Padding:2.5rem 0; border-top:1px solid #f5f5f5}
+    h2{margin:0 0 .75rem 0; font-size:1.35rem}
+    .muted{color:var(--muted)}
+    .two-col{display:grid; grid-template-columns: 1fr 1fr; gap:2rem}
+    /* Lists */
+    ul.features, ul.benefits{margin:0; padding-left:1.15rem; color:var(--muted)}
+    ul.features li, ul.benefits li{margin:.45rem 0}
+    /* Problem/Solution cards */
+    .panel{
+      background:#fff;
+      border-radius:12px;
+      padding:1rem;
+      box-shadow:0 6px 20px rgba(0,0,0,0.03);
+    }
+    /* CTA area */
+    .cta-band{
+      background:#000;
+      color:#fff;
+      padding:2rem 0;
+      text-align:center;
+      border-radius:12px;
+      margin-top:1rem;
+    }
+    .cta-band .cta-actions{display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:1rem}
+    a.cta-white{
+      background:transparent;
+      color:white;
+      border:1px solid rgba(255,255,255,0.16);
+      padding:.6rem .9rem;
+      border-radius:9px;
+      text-decoration:none;
+      font-weight:700;
+    }
+    /* Contact / footer */
+    footer.site-footer{
+      padding:2rem 0;
+      border-top:1px solid #f2f2f2;
+      margin-top:2rem;
+    }
+    .small{font-size:.92rem; color:var(--muted)}
+    /* Responsive */
+    @media (max-width:1000px){
+      .hero-grid{grid-template-columns: 1fr}
+      .two-col{grid-template-columns:1fr}
+    }
+    @media (max-width:600px){
+      .brand{font-size:.95rem}
+      h1{font-size:1.8rem}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Mesa Ridge Passport">Mesa Ridge Passport</a>
+      <nav class="primary" aria-label="Primary navigation">
+        <a href="#problem">The Problem</a>
+        <a href="#solution">Our Solution</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div>
+          <h1 id="hero-heading">The Digital Passport for Luxury Shopping</h1>
+          <p class="lede">Mesa Ridge Passport connects luxury retailers and their customers through one secure digital passport — delivering personalized service, seamless experiences, and privacy-first data control.</p>
+          <div class="hero-ctas">
+            <a class="btn ghost" href="mailto:ericpo@mesaridgepassport.com?subject=Join%20the%20Waitlist%20-%20Mesa%20Ridge%20Passport">Join the Waitlist</a>
+          </div>
+          <p class="small" style="margin-top:1rem">Redefining the Luxury Shopping Experience — Mesa Ridge Passport is a next-generation client experience platform that lets customers carry a single secure profile across participating brands.</p>
+        </div>
+        <div class="hero-graphic" aria-hidden="true">
+          <!-- Minimal monochrome placeholder graphic -->
+          <div style="font-weight:700; font-size:.95rem; color:var(--text); margin-bottom:.6rem">Mesa Ridge Passport</div>
+          <svg width="240" height="140" viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+            <rect x="2" y="2" width="236" height="136" rx="10" stroke="#e8e8e8" fill="#fff"/>
+            <path d="M26 36h188v20H26z" fill="#000"/>
+            <path d="M26 66h140v12H26z" fill="#f6f6f6"/>
+            <circle cx="200" cy="80" r="12" fill="#000"/>
+          </svg>
+          <p style="margin-top:.9rem;color:var(--muted)">Secure profile · Appointments · Clienteling · Delivery & wardrobe</p>
+        </div>
+      </div>
+    </section>
+    <section id="problem" aria-labelledby="problem-heading">
+      <div class="container">
+        <h2 id="problem-heading">The Problem</h2>
+        <div class="panel">
+          <p class="muted">Luxury shoppers often visit multiple boutiques and department stores, but every brand maintains separate customer profiles, appointment systems, purchase histories, and communication preferences. Customers repeatedly provide the same information, while Client Advisors spend valuable time recreating profiles instead of building meaningful relationships.</p>
+        </div>
+      </div>
+    </section>
+    <section id="solution" aria-labelledby="solution-heading">
+      <div class="container">
+        <h2 id="solution-heading">Our Solution</h2>
+        <div class="panel">
+          <p class="muted">Mesa Ridge Passport provides customers with one secure luxury profile that travels with them across participating retailers. With customer permission, brands can deliver more personalized service while maintaining complete privacy and data security.</p>
+        </div>
+      </div>
+    </section>
+    <section id="benefits" aria-labelledby="benefits-heading">
+      <div class="container">
+        <h2 id="benefits-heading">Benefits</h2>
+        <div class="two-col" style="margin-top:1rem">
+          <div>
+            <h3>Benefits for Customers</h3>
+            <ul class="benefits">
+              <li>One secure luxury shopping profile</li>
+              <li>Seamless appointment booking</li>
+              <li>Personalized shopping experiences</li>
+              <li>Digital wardrobe and wish list</li>
+              <li>Delivery and alteration tracking</li>
+              <li>Complete control over shared information</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Benefits for Retailers</h3>
+            <ul class="benefits">
+              <li>Strengthen client relationships</li>
+              <li>Improve appointment management</li>
+              <li>Better customer insights</li>
+              <li>Streamlined clienteling tools</li>
+              <li>Increased customer retention</li>
+              <li>Secure, permission-based customer data</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="privacy" aria-labelledby="privacy-heading">
+      <div class="container">
+        <h2 id="privacy-heading">Privacy First</h2>
+        <div class="panel">
+          <p class="muted">Privacy is the foundation of Mesa Ridge Passport. Customers own their information and decide exactly what they share with each participating retailer. Every retailer operates within its own secure environment, ensuring customer trust and brand confidentiality.</p>
+        </div>
+      </div>
+    </section>
+    <section id="vision" aria-labelledby="vision-heading">
+      <div class="container">
+        <h2 id="vision-heading">Our Vision</h2>
+        <div class="panel">
+          <p class="muted">We believe luxury shopping should feel effortless. Mesa Ridge Passport is building the operating system for luxury retail relationships—bringing together personalized service, intelligent technology, and customer-controlled privacy to create the future of luxury commerce.</p>
+        </div>
+      </div>
+    </section>
+    <section id="join" aria-labelledby="join-heading">
+      <div class="container">
+        <h2 id="join-heading">Join the Future of Luxury Retail</h2>
+        <p class="muted">We're partnering with forward-thinking luxury retailers to shape the next generation of client experiences. Whether you're a boutique, department store, gallery, jewelry brand, or fashion house, we'd love to show you what's possible.</p>
+        <div class="cta-band" role="region" aria-label="Join calls to action">
+          <div>
+            <strong style="font-size:1.05rem">Request a Demo</strong>
+            <p class="small" style="margin: .35rem 0 0 0">See Mesa Ridge Passport in action and discuss integration options for your business.</p>
+          </div>
+          <div class="cta-actions">
+        
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Contact</h2>
+        <div class="panel" style="display:flex; flex-direction:column; gap:.6rem">
+          <div>
+            <strong>Mesa Ridge Passport</strong>
+            <p class="muted small" style="margin:.25rem 0 0 0">
+              Email: <a href="mailto:ericpo@mesaridgepassport.com">ericpo@mesaridgepassport.com</a><br />
+              Website: <a href="https://www.mesaridgepassport.com" target="_blank" rel="noopener">www.mesaridgepassport.com</a>
+            </p>
+          </div>
+          <p class="small muted" style="margin-top:.6rem">© 2026 Mesa Ridge Passport. All Rights Reserved.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap;">
+      <div>
+        <strong>Mesa Ridge Passport</strong>
+        <div class="small muted" style="margin-top:.25rem">One profile · Multiple brands · Privacy-first</div>
+      </div>
+      <div class="small muted">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
